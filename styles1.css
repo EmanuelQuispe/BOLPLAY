@@ -58,7 +58,7 @@ main {
     margin-right: -10px;
     margin-bottom: -35px;
     margin-top: -850px;
-    width: 1059px; /* Establecer el ancho de la imagen al 100% del contenedor */
+    width: 959px; /* Establecer el ancho de la imagen al 100% del contenedor */
     height: 510px; /* Mantener la proporción original de la imagen */
     max-width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
    
