@@ -1,0 +1,144 @@
+
+body {
+    background: linear-gradient(to bottom, rgb(46, 99, 212), #91186d, #e73cb4);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color:#bc2a8e3a;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 10px;
+}
+
+#login-container,
+#register-container {
+    align-items: center;
+    text-align: left;
+    background-color: rgba(104, 13, 73, 0.5);
+    padding: 30px;
+    border-radius: 0px;
+    width: 300px;
+    height: 450px;
+    margin-top: -10px;
+    margin-right: -70px;
+    margin-left: -10px;
+    margin-bottom: -50px;
+}
+.login-form {
+    flex: 1;
+    padding: 0px;
+}
+.login-image{
+    text-align: right
+   
+}
+
+.login-image img {
+    
+    margin-left: 1px;
+    margin-right: -10px;
+    margin-bottom: -35px;
+    margin-top: -850px;
+    width: 1159px; /* Establecer el ancho de la imagen al 100% del contenedor */
+    height: 510px; /* Mantener la proporción original de la imagen */
+    max-width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(0, 31, 133, 0.603);
+}
+footer { background-color:#bc2a8e3a; color: #fff; padding: 30px; text-align: center; 
+    margin-top: 20px;
+    margin-bottom: -35px; }
+
+footer a { color: #fff; margin: 0 0px; text-decoration: none; }
+
+footer a:hover { color: #ccc; text-decoration: underline; }
+/* Otros estilos... */
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+#rectangular-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los botones al centro horizontalmente */
+}
+
+.rectangular-button {
+    display: 30px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 0px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 270px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+.rectangular-button.facebook {
+    background-color: #3b5998; /* Color de Facebook */
+    color: #fff; /* Texto en color blanco */
+}
+
+.rectangular-button.instagram {
+    background-color: #bc2a8d; /* Color de Instagram */
+    color: #fff; /* Texto en color blanco */
+}
+
+.rectangular-button.twitter {
+    background-color: #1da1f2; /* Color de Twitter */
+    color: #fff; /* Texto en color blanco */
+}
+@media only screen and (max-width: 760px) {
+    #login-container,
+    #register-container {
+        width: 100%; /* Ajusta el ancho al 100% en dispositivos móviles */
+    }
+
+    .login-image img {
+        margin-top: 0; /* Elimina el margen superior en dispositivos móviles */
+    }
+}

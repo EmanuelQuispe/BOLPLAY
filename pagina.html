@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bolplay</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo"></div>
+    <a class="btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <div class="menu">
+      <a href="#ini">Inicio</a>
+      <a href="#cin">Cine</a>
+      <a href="#str">Streaming</a>
+      <a href="#nos">Reparto</a>
+      <div class="botones-login">
+        <a href="login.html" class="boton">Login</a>
+        <a href="registro.html" class="boton">Registro</a>
+    </div>
+    </div>
+    <!-- Formulario emergente de login -->
+    <div class="overlay" id="loginOverlay">
+      <div class="popup">
+        <h2>Ingresar</h2>
+        <form id="loginForm">
+          <label for="username">Nombre de usuario:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+
+          <div class="btn-container">
+            <button type="button" onclick="submitForm()">Ingresar</button>
+            <button type="button" onclick="clearForm()">Limpiar formulario</button>
+          </div>
+        </form>
+        <a class="close" onclick="closeForm('Ingresar')">×</a>
+      </div>
+    </div>
+    <!-- Formulario emergente de registro -->
+    <div class="overlay" id="registerOverlay">
+      <div class="popup">
+        <h2>Registrarse</h2>
+        <form id="registerForm">
+          <label for="firstName">Nombre:</label>
+          <input type="text" id="firstName" name="firstName" required>
+
+          <label for="lastName">Apellidos:</label>
+          <input type="text" id="lastName" name="lastName" required>
+
+          <label for="age">Edad:</label>
+          <input type="text" id="age" name="age" required>
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="registerPassword">Contraseña:</label>
+          <input type="password" id="registerPassword" name="registerPassword" required>
+
+          <div class="btn-container">
+            <button type="button" onclick="registerUser()">Registrarse</button>
+            <button type="button" onclick="clearRegisterForm()">Limpiar formulario</button>
+          </div>
+        </form>
+        <a class="close" onclick="closeForm('Registrarse')">×</a>
+      </div>
+    </div>
+  </nav>
+  <header></header>
+  <article>
+    <a id="ini"></a>
+    <h2>Inicio</h2>
+    <p>
+      ¡Bienvenido a BolPlay! El Escenario Virtual del Cine Boliviano.
+      Descubre Bolivia a través de BolPlay: Donde Cada Película Cuenta una Historia Única.
+      Explora Nuestro Universo Cinematográfico con BolPlay, tu Puerta de Entrada al Cine Boliviano.
+      ¡Bolivia en tu Pantalla! Disfruta de la Autenticidad Cinematográfica en BolPlay.
+      Bienvenido a BolPlay, Donde la Magia del Cine Boliviano Cobra Vida.
+      Sumérgete en la Riqueza del Cine Nacional con BolPlay: Tu Destino para Películas Bolivianas Excepcionales.
+      Desde los Andes hasta tu Pantalla: BolPlay, la Plataforma de Streaming de Películas Bolivianas.
+      Explora, Sueña, Vive: BolPlay te Invita a una Experiencia Cinematográfica Única en Bolivia.
+      Con BolPlay, Cada Película es un Viaje a la Identidad y Cultura Boliviana.
+      ¡Bolivia en BolPlay! Descubre, Disfruta y Conéctate con la Esencia del Cine Boliviano.
+      <br />
+
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="iimg/Afiche-Yawar-Mallku.jpg" alt="Imagen 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="iimg/AFICHE_UKAMAU.jpg" alt="Imagen 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="iimg/amargo-mar-afiche1.jpg" alt="Imagen 3" />
+      </div>
+    </div>
+  </article>
+  <article>
+    <a id="cin"></a>
+    <h2>Cine</h2>
+    <p>
+      Estas son las peliculas que se estan presentando ahora mismo en el cine:
+    </p>
+    <div class="gallery-container-cine">
+      <!-- Columna 1: Posters de películas -->
+      <div class="poster-column">
+        <div class="poster-item">
+          <img src="iimg/Afiche-Yawar-Mallku.jpg" alt="Película 1" />
+        </div>
+        <div class="poster-item">
+          <img src="iimg/AFICHE_UKAMAU.jpg" alt="Película 2" />
+        </div>
+        <div class="poster-item">
+          <img src="iimg/amargo-mar-afiche1.jpg" Película 3" />
+        </div>
+        <div class="poster-item">
+          <img src="iimg/utama.jpg" alt="Película 3" />
+        </div>
+        <div class="poster-item">
+          <img src="iimg/soren.jpg" Película 3" />
+        </div>
+        <div class="poster-item">
+          <img src="iimg/winay.jpg" alt="Película 3" />
+        </div>
+        <div class="poster-item">
+          <img src="iimg/chaco.jpg" alt="Película 3" />
+        </div>
+        <div class="poster-item">
+          <img src="iimg/el rio.jpg" alt="Película 3" />
+        </div>
+        <!-- Agrega más posters según sea necesario -->
+      </div>
+
+      <!-- Columna 2: Trailers de YouTube y Descripciones -->
+      <div class="trailer-column">
+        <div class="trailer-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ksR3AzoEiXE" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p class="trailer-description">Esta película basada en hechos reales cuenta la historia de una lejana
+            comunidad Quechua, en la que un equipo del Cuerpo de Paz estadounidense se dedica a esterilizar a mujeres
+            indígenas sin su consentimiento. Ignacio, jefe de la Comunidad, descubre el crimen y toma represalias junto
+            a los comuneros.</p>
+        </div>
+        <div class="trailer-item">
+          <iframe width="1349" height="484" src="https://www.youtube.com/embed/YSqlK129Txc"
+            title="Ukamau (Así es) de Jorge Sanjinés - Trailer" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <p class="trailer-description">Primera película filmada en aymara. En esta metáfora sobre la recuperación de
+            la soberanía indígena, una joven campesina aymara es violada y asesinada por un comerciante mestizo. Antes
+            de morir consigue decirle a su esposo el nombre del asesino.</p>
+        </div>
+        <div class="trailer-item">
+          <iframe width="1349" height="484" src="https://www.youtube.com/embed/FivxtZ6AY6o" title="AMARGO MAR"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <p class="trailer-description">En Amargo mar, un personaje de ficción, el Ing. Manuel Dávalos y su enamorada
+            una rabona tarijeña conocida como 'La Vidita', son los testigos conductores de este relato de intrigas y
+            mezquindades desplegadas por los presuntos héroes de aquella historia.</p>
+        </div>
+        <div class="trailer-item">
+          <iframe width="1349" height="484" src="https://www.youtube.com/embed/9BQMJ8gw24g" title="UTAMA - TRAILER"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+          <p class="trailer-description">En el altiplano boliviano, una pareja de ancianos quechuas lleva años viviendo
+            la misma vida cotidiana. Durante una sequía inusualmente larga, Virginio y su esposa Sisa se enfrentan a un
+            dilema: resistir o ser derrotados por el entorno y el propio tiempo.</p>
+        </div>
+        <div class="trailer-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/F_qyLPMwVwY" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p class="trailer-description">Paloma y Amaru tienen una relación casi perfecta — hasta que aparece Søren.
+            Místico, embustero o quizás solo un simple aventurero europeo, Søren tiene una profunda influencia en la
+            vida de la joven pareja, infectándolos de cuestionamientos y empujándolos a una búsqueda existencial.</p>
+        </div>
+        <div class="trailer-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OLglcUOp9Bw" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p class="trailer-description">“Wiñay” es la historia de Susana y Sole, dos mujeres con diferencias visibles
+            que inician un viaje a la selva para participar de un ritual de Ayahuasca. El filme es un viaje interior
+            sobre la amistad y el olvido.</p>
+        </div>
+        <div class="trailer-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ORMqX77OQ8c" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p class="trailer-description">Este drama histórico sobre la guerra del Chaco no representa la lucha
+            sangrienta, sino la historia de un pequeño regimiento boliviano que vaga por la inhóspita y seca llanura
+            chaqueña en 1934.</p>
+        </div>
+        <div class="trailer-item">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4ozJsugKJHY" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p class="trailer-description">Después de que su madre lo expulsa de su casa, Sebastián, un chico de 15 años,
+            viaja a Guayaramerín, un pueblo en la frontera entre Bolivia y Brasil. Allí conoce a su padre y a la novia
+            de éste, Julieta, de quien se enamora.</p>
+        </div>
+        <!-- Agrega más trailers y descripciones según sea necesario -->
+      </div>
+    </div>
+  </article>
+  <article>
+    <a id="str"></a>
+    <h2>Streaming</h2>
+    <p>
+      También tenemos una amplia variedad de peliculas que son transmitidas con la suscripción mensual,
+      algunas de ellas son las siguientes:
+    </p>
+    <div class="movie-gallery">
+      <div class="movie-item">
+        <img src="iimg/10.jpg" alt="Poster 1" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/11.png" alt="Poster 2" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/12.jpg" alt="Poster 3" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/9.1.png" alt="Poster 4" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/1.jpg" alt="Poster 5" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/2.jpg" alt="Poster 6" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/3.jpg" alt="Poster 7" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/4.jpg" alt="Poster 8" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/Afiche-Yawar-Mallku.jpg" alt="Poster 9" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/utama.jpg" alt="Poster 10" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/AFICHE_UKAMAU.jpg" alt="Poster 11" />
+      </div>
+      <div class="movie-item">
+        <img src="iimg/el rio.jpg" alt="Poster 12" />
+      </div>
+      <!-- Agrega más elementos según sea necesario -->
+
+    </div>
+  </article>
+  <article>
+    <a id="nos"></a>
+    <h2>Reparto</h2>
+    <p>
+      "Sangre de Cóndor" es una película boliviana de 1969 dirigida por Jorge Sanjinés. Esta obra cinematográfica es
+      parte del movimiento cinematográfico y cultural denominado el "Nuevo Cine Latinoamericano", que buscaba retratar
+      la realidad social y política de América Latina. A continuación, te proporciono algunas palabras clave sobre el
+      reparto y la trama de "Sangre de Cóndor":
+    </p>
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <img src="iimg/rep1.jpg" alt="Imagen 1" />
+      </div>
+      <div class="gallery-item">
+        <img src="iimg/rep2.jpg" alt="Imagen 2" />
+      </div>
+      <div class="gallery-item">
+        <img src="iimg/rep3.webp" alt="Imagen 2" />
+      </div>
+    </div>
+  </article>
+  <script src="script.js"></script>
+  <footer>
+    <a href="https://www.facebook.com" class="icon-link"><i class="fab fa-facebook-square icon"></i></a>
+    <a href="https://www.pinterest.com" class="icon-link"><i class="fab fa-pinterest icon"></i></a>
+    <a href="https://www.instagram.com" class="icon-link"><i class="fab fa-instagram icon"></i></a>
+    <a href="https://twitter.com" class="icon-link"><i class="fab fa-twitter icon"></i></a>
+
+    <p class="p2">Esta pagina fue echa por Emanuel Quispe Choque carrera de informatica en la facultad de ciencias
+      puras y naturales de la UMSA</p>
+  </footer>
+
+</html>

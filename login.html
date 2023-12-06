@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles1.css">
+    
+   
+</head>
+<body>
+    <header>
+        <h1>Bienvenido al Inicio de Sesión</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <!-- Agregar más enlaces según sea necesario -->
+        </nav>
+    </header>
+
+    <main>
+        <div id="login-container">
+            <h2>Login</h2>
+            <form id="login-form">
+              <label for="username">Usuario:</label>
+              <input type="text" id="username" name="username" required>
+
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required>
+
+              <button type="button" onclick="login()">Iniciar Sesión</button>
+              <div id="rectangular-button">
+              <a href="https://www.facebook.com" class="rectangular-button facebook" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+<a href="https://www.instagram.com" class="rectangular-button instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+<a href="https://www.twitter.com" class="rectangular-button twitter" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+ </div>
+
+                <!-- Botones para compartir en redes sociales -->
+               
+            </form>
+        </div>
+       <div class="login-image">
+      <img src="iimg/pexels-photo-7130475.jpg" alt="Descripción de la imagen">
+  </div>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Tu Compañía. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

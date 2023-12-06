@@ -1,0 +1,131 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgb(46, 99, 212), #91186d, #e73cb4);
+}
+
+header {
+    background-color: #91186d93;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.button-container {
+    text-align: left; /* Alinea los botones a la izquierda */
+    background-color:rgba(248, 197, 197, 0.089); 
+    padding: 100px; /* Aumenta el relleno para hacer el color de fondo más grande */
+    border-radius: 0px;
+    width: 300px; /* Ajusta el ancho del contenedor */
+    height: 350px; 
+    margin-top: -130px; /* Ajusta el margen superior negativo para mover la imagen hacia arriba */
+    margin-right: -60px; /* Ajusta el margen derecho negativo para mover la imagen hacia la derecha */
+    margin-left: -40px;
+    margin-bottom: -145px;
+}
+.button {
+    display: block; /* Hace que los botones sean bloques para ocupar el ancho disponible */
+    background-color: #000000; /* Cambia el fondo de color del botón */
+    color: #ffffff; /* Cambia el color del texto del botón */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Agrega un espacio entre los botones */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    color: #fff; /* Cambia el color del texto del botón al pasar el ratón */
+}
+.image-container {
+    text-align: right; /* Alinea la imagen a la derecha */
+    
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 545px;
+    width: 980px;
+    margin-top: -40px; 
+    margin-left: -50px;/* Ajusta el margen superior negativo para mover la imagen hacia arriba */
+    margin-right: -40px; /* Ajusta el margen derecho negativo para mover la imagen hacia la derecha */
+    margin-bottom: -40px;
+}
+footer { background-color: #91186d93; color: #fff; padding: 10px; text-align: center; margin-top: 20px; }
+
+footer a { color: #fff; margin: 0 10px; text-decoration: none; }
+
+footer a:hover { color: #ccc; text-decoration: underline; }
+#rectangular-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea los botones al centro horizontalmente */
+}
+.rectangular-button {
+    display: 30px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 0px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 270px; /* Puedes ajustar el valor según tus necesidades */
+}
+
+.rectangular-button.facebook {
+    background-color: #3b5998; /* Color de Facebook */
+    color: #fff; /* Texto en color blanco */
+}
+
+.rectangular-button.instagram {
+    background-color: #bc2a8d; /* Color de Instagram */
+    color: #fff; /* Texto en color blanco */
+}
+
+.rectangular-button.twitter {
+    background-color: #1da1f2; /* Color de Twitter */
+    color: #fff; /* Texto en color blanco */
+}
+@media only screen and (max-width: 760px) {
+    header {
+        padding: 10px; /* Reduzco el relleno del encabezado para dispositivos móviles */
+    }
+
+    main {
+        padding: 10px; /* Reduzco el relleno del contenido para dispositivos móviles */
+    }
+    .image-container {
+        display: none; /* Oculta la imagen en pantallas más pequeñas */
+      }
+      nav {
+        text-align: center; /* Alinea los elementos del nav al centro en pantallas más pequeñas */
+      }
+    
+      nav a {
+        display: block; /* Convierte los elementos de navegación en bloques para apilarlos verticalmente */
+        margin: 10px 0; /* Añade espacio entre los elementos de navegación */
+      }
+    
+      footer {
+        text-align: center; /* Alinea el texto en el centro en pantallas más pequeñas */
+      }
+}
